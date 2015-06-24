@@ -1,28 +1,10 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== MuseumApp README
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Rake Task:
+
+This rake task will fill 1000 dummy visitors(random enter and exit time in museum) for X days before today's date.
+
+  rake random_visitors[X]
+  
+  Eg: rake random_visitors[4] will insert the visitors 4 days before today's date.
