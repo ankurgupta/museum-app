@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class='col-sm-6'>
+      <div class="form-group">
+        <%= form_tag '/search_visitors', remote: true  do %>
+        <strong>Select time to know number of visitors:</strong>
+        <span class='input-group date' id='datetimepicker1'>
+          <%= text_field_tag 'check_time', '', class: "form-control" %>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </span>
+        <br/>
+        <span><%= submit_tag 'Find Visitors', class: 'btn btn-primary' %></span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <h1><div id="visitor-count"></div><h1>
+</div>
+
+<script type="text/javascript">
+
+</script>
